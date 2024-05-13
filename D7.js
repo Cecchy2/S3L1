@@ -84,7 +84,6 @@ const numeriDispari = function () {
   }
   return numeri;
 };
-
 console.log(numeriDispari());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
@@ -207,9 +206,16 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+movies.forEach(function (elemento) {});
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+const numeroFilm = function () {
+  let numero = movies.length;
+  return numero;
+};
+console.log(numeroFilm());
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
