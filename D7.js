@@ -33,14 +33,17 @@ const numeriPari = random.filter(function (elemento) {
 });
 
 console.log(numeriPari);
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
 let somma = 0;
 random.forEach(function (elemento) {
   return (somma += elemento);
 });
 console.log(somma);
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -48,15 +51,41 @@ console.log(somma);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const n = 25;
+const nuovoArray = [69, 6, 78, 14];
+
+const secondoArray = nuovoArray.map(function (elementi) {
+  return (elementi += n);
+});
+console.log(secondoArray);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+const stringheArray = ["ciao", "a", "tutti"];
+const lunghezzaStringhe = stringheArray.map(function (elemento) {
+  let lunghezza = elemento.length;
+  return lunghezza;
+});
+
+console.log(lunghezzaStringhe);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+const numeriDispari = function () {
+  const numeri = [];
+  for (let i = 0; i < 101; i++) {
+    if (i % 2 !== 0) {
+      numeri.push(i);
+    }
+  }
+  return numeri;
+};
+
+console.log(numeriDispari());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
