@@ -4,7 +4,7 @@
 */
 
 const stringheConcatenate = function (stringa1, stringa2) {
-  const slicedstrings = stringa1.slice(1) + stringa2.slice(8);
+  const slicedstrings = stringa1.slice(0, 2) + stringa2.slice(8);
   const MaiuscolStringa = slicedstrings.toUpperCase();
   return MaiuscolStringa;
 
@@ -242,12 +242,12 @@ console.log(filmsMillennio);
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-const trovaFilm = function (imdbID) {
+/* const trovaFilm = function (imdbID) {
   const Film = movies.find(imdbID);
   return Film;
 };
 
-console.log(Lords of Dogtown)
+console.log(Lords of Dogtown) */
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
