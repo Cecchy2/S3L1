@@ -53,6 +53,15 @@ random.forEach(function (elemento) {
 });
 console.log(somma);
 
+let somma2 = 0;
+const sommaArrayNumbers = function (arrayDaSommare) {
+  arrayDaSommare.forEach((element) => {
+    somma2 += element;
+  });
+  return somma2;
+};
+console.log(sommaArrayNumbers(random));
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
