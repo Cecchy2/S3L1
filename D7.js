@@ -53,8 +53,8 @@ random.forEach(function (elemento) {
 });
 console.log(somma);
 
-let somma2 = 0;
 const sommaArrayNumbers = function (arrayDaSommare) {
+  let somma2 = 0;
   arrayDaSommare.forEach((element) => {
     somma2 += element;
   });
@@ -76,6 +76,13 @@ const secondoArray = nuovoArray.map(function (elementi) {
   return (elementi += n);
 });
 console.log(secondoArray);
+
+const incrementedArray = function (arraynumbers, n) {
+  return arraynumbers.map(function (numbers) {
+    return numbers + n;
+  });
+};
+console.log(incrementedArray(nuovoArray, 25));
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
@@ -224,7 +231,7 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-movies.forEach(function (elemento) {});
+const getOldMovie = function (moviesArray) {};
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
@@ -260,12 +267,12 @@ console.log(filmsMillennio);
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-/* const trovaFilm = function (imdbID) {
-  const Film = movies.find(imdbID);
-  return Film;
+const findMovie = function (moviesArray, imdbID) {
+  const found = moviesArray.find(function (movie) {
+    return movie.imdbID === imdbID;
+  });
+  return found;
 };
-
-console.log(Lords of Dogtown) */
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
