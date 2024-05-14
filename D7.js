@@ -34,6 +34,15 @@ const numeriPari = random.filter(function (elemento) {
 
 console.log(numeriPari);
 
+const NumeriPari = function (arrayNumeri) {
+  const element = [];
+  for (let i = 0; i < arrayNumeri.length; i++) {
+    element.push(arrayNumeri[i]);
+  }
+  return element;
+};
+console.log(NumeriPari(random));
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
